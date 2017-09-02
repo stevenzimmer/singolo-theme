@@ -1,0 +1,22 @@
+.services {
+	background-color: rgb(255, 255, 255);
+
+	h2,h4 {
+		color: rgb(102, 109, 137);
+	}
+
+	p {
+		color: #767e9e;
+		margin-bottom: 55px;
+	}
+
+	.icon-wrap {
+
+		p {
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 22px;
+			margin-bottom: 30px;
+		}
+	}
+}

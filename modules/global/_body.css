@@ -1,11 +1,55 @@
-body{
-	columns: 300px 4;
+body {
+  background-color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
 
-	.box {
-		color: $red;
+section {
+	padding: 65px 0;
+}
 
-		@mixin min530 {
-			color: $blue
-		}
+h2 {
+	margin-bottom: 20px;
+}
+
+h2, h4 {
+	font-weight: 700;
+	margin-top: 0;
+}
+
+p {
+	font-weight: 300;
+	line-height: 28px;
+	font-size: 18px;
+}
+
+a {
+	transition: all .2s ease-in-out;
+}
+
+img {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	position: relative;
+
+	&-purple {
+		border: 2px solid rgb(102, 109, 137);
+	}
+
+	&-inner {
+		position: absolute;
+		top: 7px;
+		left: 0;
+		right: 0;
+		bottom: 0;
 	}
 }

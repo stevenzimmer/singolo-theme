@@ -10,4 +10,74 @@ Version: 1.0
 @import 'modules/global/_mixins';
 @import 'modules/global/_sprite';
 @import 'modules/global/_body';
+@import 'modules/global/_colors';
+@import 'modules/partials/_navigation';
+@import 'modules/partials/_hero';
+@import 'modules/partials/_services';
+@import 'modules/partials/_portfolio';
+@import 'modules/partials/_about';
+@import 'modules/partials/_footer';
+@import 'modules/partials/_form';
+@import 'modules/partials/_quote';
+
+@media (min-width: 992px){
+	.container {
+		width: 940px;
+	}
+}
+
+
+/* media queries */
+
+
+@media (min-width: 992px){
+	.container {
+		width: 940px;
+	}
+}
+
+@media (max-width: 992px){
+	.icon img {
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.navbar .container {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	footer .container {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.container {
+		padding-right: 50px;
+		padding-left: 50px;
+	}
+
+	#about .img p {
+		margin-bottom: 20px;
+	}
+
+	.vert-align {
+		height: 400px;
+	}
+}
+
+@media (max-width: 414px) {
+
+	#slider {
+		padding: 0;
+	}
+
+	.vert-align {
+		height: 330px;
+	}
+}
+
+
+
 

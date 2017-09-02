@@ -1,0 +1,65 @@
+.navbar-default {
+	background-color: rgb(48, 52, 65);
+}
+
+/* Navigation */
+
+.navbar-default .navbar-nav>li>a:focus {
+	color: #fff;
+}
+
+
+.navbar {
+	border-radius: 0;
+	border:none;
+	margin-bottom: 0;
+	padding: 20px 0;
+	font-weight: bold;
+
+	&-header {
+
+	}
+
+	&-brand {
+		 color: rgb(255, 255, 255);
+  		font-size: 25px;
+  		text-transform: uppercase;
+
+  		span {
+  			color: #ee5052;
+  			cursor: default;
+  		}
+	}
+}
+
+
+.navbar-default .navbar-nav>li>.active {
+	color: #ee5052;
+}
+
+.navbar-brand span,
+.navbar-default .navbar-nav>li>.active:hover {
+	cursor: default;
+	color: #ee5052;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-family: "Lato";
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav>li>a:hover {
+	color: rgba(255,255,255,0.75);
+}
+
+.nav>li>a span {
+	margin: 0 15px 0 15px;
+	color: rgb(102, 109, 137);
+	cursor: default;
+}
+
+.nav>li>a {
+	padding: 15px 0;
+}

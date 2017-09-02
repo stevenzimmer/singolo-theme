@@ -1,0 +1,30 @@
+/* Quote */
+.quote {
+	background-color: rgb(235, 80, 85);
+
+	h2,p {
+		color: rgb(240, 216, 217);
+	}
+
+	.form {
+
+		&-horizontal {
+			margin-top: 41px;
+		}
+
+		&-control {
+			font-size: 12px;
+			color: rgb(244, 140, 143);
+			background-color: rgb(202, 69, 73);
+			border: 1px solid rgb(202, 69, 73);
+			box-shadow: none;
+			font-weight: 500;
+			border-radius: 6px;
+			transition: background-color .3s ease-in-out;
+
+			&:focus, &:active {
+				background-color: #fff;
+			}
+		}
+	}
+}

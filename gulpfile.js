@@ -50,10 +50,12 @@ gulp.task('scripts', function(callback) {
 	});
 });
 
+gulp.task('default', ['styles', 'scripts', 'watch']);
+
 
 gulp.task('watch', function() {
 
-	watch('style.css', function() {
+	watch( ['style.css', './modules/**/*.css'], function() {
 		gulp.start('styles');
 	});
 

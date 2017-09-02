@@ -1,0 +1,19 @@
+.portfolio {
+	background-color: rgb(48, 52, 65);
+	h2,h4 {
+		color: rgb(102, 109, 137);
+	}
+
+	p {
+		color: rgb(118, 126, 158);
+		margin-bottom: 55px;
+	}
+
+	&-img {
+		margin-bottom: 20px;
+
+		img {
+			max-width: 220px;
+		}
+	}
+}
