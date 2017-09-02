@@ -4,3 +4,10 @@ Author: Steven Zimmer
 Description: Theme created to secure a job with Udemy
 Version: 1.0
 */
+
+@import 'bootstrap';
+@import 'modules/global/_variables';
+@import 'modules/global/_mixins';
+@import 'modules/global/_sprite';
+@import 'modules/global/_body';
+

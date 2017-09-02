@@ -16,6 +16,22 @@
 </head>
 <body <?php body_class(); ?>>
 
+<h1>text</h1>
+
+<span class="icon icon-bulb"></span>
+<span class="icon icon-bubble"></span>
+<span class="icon icon-heart"></span>
+<span class="icon icon-pen"></span>
+<span class="icon icon-phone"></span>
+<span class="icon icon-star"></span>
+
+<div class="bg-blue">
+	<span class="icon icon-singolo-logo"></span>
+</div>
+<div>
+	<a href="" class="btn btn-primary">Text</a>
+</div>
+
 <?php wp_footer(); ?>
 </body>
 </html>

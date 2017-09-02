@@ -1,0 +1,67 @@
+
+
+	.icon {
+		background-image: url('../../build/sprite/css/sprite-986b8ff1.svg');
+		display: inline-block;
+	}
+
+	.icon-bubble {
+		width: 36px;
+		height: 32px;
+		background-position: 0 40%;
+	}
+
+
+
+
+	.icon-bulb {
+		width: 26px;
+		height: 36px;
+		background-position: 0 100%;
+	}
+
+
+
+
+	.icon-heart {
+		width: 36px;
+		height: 32px;
+		background-position: 30.252100840336134% 40%;
+	}
+
+
+
+
+	.icon-pen {
+		width: 36px;
+		height: 36px;
+		background-position: 21.84873949579832% 100%;
+	}
+
+
+
+
+	.icon-phone {
+		width: 26px;
+		height: 36px;
+		background-position: 48.06201550387597% 100%;
+	}
+
+
+
+
+	.icon-singolo-logo {
+		width: 119px;
+		height: 24px;
+		background-position: 0 0;
+	}
+
+
+
+
+	.icon-star {
+		width: 36px;
+		height: 35px;
+		background-position: 100% 0;
+	}
+

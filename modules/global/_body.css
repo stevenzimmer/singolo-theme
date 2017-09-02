@@ -1,0 +1,11 @@
+body{
+	columns: 300px 4;
+
+	.box {
+		color: $red;
+
+		@mixin min530 {
+			color: $blue
+		}
+	}
+}
