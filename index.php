@@ -1,10 +1,12 @@
-<?php get_header(); ?>
+<?php
+
+get_header(); ?>
 
 <!-- Slider section
     ================================================== -->
 
 
-<section id="slider" class="slider" data-type="background" data-speed="2">
+<section class="slider">
     <div class="container">
         <div class="row">
         	<div class="slider-wrapper">
@@ -137,7 +139,7 @@
 
 <div class="bg-bottom white"></div> <!-- Services bottom -->
 
-<section class="portfolio">
+<section id="portfolio" class="portfolio">
 	<div class="container">
 		<div class="row">
 			<h2>Portfolio</h2>
@@ -145,30 +147,30 @@
 		</div>
 		<div class="row">
 			<div class="portfolio-wrapper">
-				<?php
-					$tiles = array(
+			<?php
+				$tiles = array(
 
-							'bird',
-							'boat',
-							'castle',
-							'envelope',
-							'eyes',
-							'girl',
-							'monster',
-							'robot',
-							'sdk',
-							'skunk',
-							'space',
-							'text'
-						);
+						'bird',
+						'boat',
+						'castle',
+						'envelope',
+						'eyes',
+						'girl',
+						'monster',
+						'robot',
+						'sdk',
+						'skunk',
+						'space',
+						'text'
+					);
 
-					foreach ($tiles as $tile ) { ?>
-						<div class="col-md-3 col-sm-4">
-							<div class="portfolio-img">
-								<img class="img-responsive center-block" max-width="220" src="/wp-content/uploads/2017/08/project-tile-<?php echo $tile; ?>.jpg">
-							</div>
+				foreach ($tiles as $tile ) { ?>
+					<div class="col-md-3 col-sm-4">
+						<div class="portfolio-img">
+							<img class="img-responsive center-block" max-width="220" src="/wp-content/uploads/2017/08/project-tile-<?php echo $tile; ?>.jpg">
 						</div>
-					<?php }
+					</div>
+				<?php }
 				?>
 			</div>
 		</div>
@@ -192,17 +194,13 @@
                     <img class="img-responsive" max-width="300" src="wp-content/uploads/2017/08/photo-2.jpg">
                     <h4>Adam Jensen</h4>
                     <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
-
 	            </div>
 	            <div class="col-sm-4">
-
 	                   <img class="img-responsive" max-width="300" src="wp-content/uploads/2017/08/photo.jpg">
 	                    <h4>Desmond Miles</h4>
 	                    <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
-
 	            </div>
 	            <div class="col-sm-4">
-
 	                    <img class="img-responsive" max-width="300" src="wp-content/uploads/2017/08/photo-1.jpg">
 	                    <h4>Scolara Visari</h4>
 	                    <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
@@ -221,7 +219,7 @@
     ================================================== -->
 
 
-<section id="quote" class="quote">
+<section id="quote" class="quote pre-form">
     <div class="container">
         <div class="row">
             <h2>Get a Quote</h2>
@@ -230,25 +228,29 @@
             <!-- Form
             ================================================== -->
 
-            <form class="form-horizontal">
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="name" class="form-control" placeholder="Name (Required)">
+            <form id="contact" class="form-horizontal">
+            	<div class="col-sm-12">
+                	<div class="form-group">
+                    	<label class="form-label">Name</label>
+                        <input id='name' name="name" type="text" class="form-control">
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="email" class="form-control" placeholder="Email (Required)">
+
+                	<div class="form-group">
+                    	<label class="form-label">Email</label>
+                        <input id="email" name="email" type="email" class="form-control">
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <input type="email" class="form-control" placeholder="Subject">
+
+                	<div class="form-group">
+                    	<label class="form-label">Subject</label>
+                        <input id="subject" name="subject" type="text" class="form-control">
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-12">
-                        <textarea class="form-control" rows="7" placeholder="Describe your project in detail..."></textarea>
+
+               		<div class="form-group">
+                    	<label class="form-label form-label-textarea">Describe your project in detail</label>
+                        <textarea id="description" name="description" class="form-control form-control-textarea" rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                    	<input id="submit" type="submit" name="submit" value="Submit Your Quote" class="btn btn-primary">
                     </div>
                 </div>
             </form> <!-- End form -->
@@ -256,8 +258,15 @@
     </div>
 </section> <!-- End Quote section -->
 
+<section class="thanks quote">
+	<div class="container">
+		<div class="row">
+			<h2>Thanks, <span class="thanks-name">for reaching out</span>!</h2>
+			<p>I will be in touch shortly to assist with your project</p>
+		</div>
+	</div>
+</section>
+
 <div class="bg-bottom red"></div> <!-- Quote bottom -->
-
-
 
 <?php get_footer(); ?>

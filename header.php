@@ -53,7 +53,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#" class="active">HOME<span>·</span></a></li>
                         <li><a href="#services" class="scroll">SERVICES<span>·</span></a></li>
-                        <li><a href="#">PORTFOLIO<span>·</span></a></li>
+                        <li><a href="#portfolio">PORTFOLIO<span>·</span></a></li>
                         <li><a href="#about">ABOUT<span>·</span></a></li>
                         <li><a href="#quote">CONTACT</a></li>
                     </ul>

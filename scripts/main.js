@@ -1,6 +1,5 @@
 import 'jquery';
 import 'bootstrap/dist/js/bootstrap';
-import '../node_modules/waypoints/lib/noframework.waypoints';
 
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -26,4 +25,59 @@ $(function() {
   });
 });
 
-console.log( $('h1').text('text again') );
+$('.form-control').focus( function() {
+
+  $(this).prev('.form-label').addClass('float');
+
+}).blur( function() {
+
+    if ($(this).val() == '' ) {
+
+       $(this).prev('.form-label').removeClass('float');
+
+    }
+
+});
+
+$('#submit').on('click', function(e) {
+
+  e.preventDefault();
+
+  $('.form-control').each( function() {
+
+    $(this).removeClass('error');
+
+    if ( $(this).val() == '' ) {
+
+      $(this).addClass('error');
+
+    } else {
+
+      var data = {
+        'name': $('#name').val(),
+        'email': $('#email').val(),
+        'subject': $('#subject').val(),
+        'description': $('#description').val()
+      };
+
+      $.ajax({
+        url: '../../..//wp-content/plugins/form-validate.php',
+        type: 'post',
+        data: data,
+        dataType: 'json',
+        success: function(data) {
+
+          $('.pre-form').css('display', 'none');
+          $('.thanks').css('display', 'block');
+          $('.thanks-name').text(data.name);
+        }
+      });
+      return false;
+    }
+
+  });
+
+
+
+});
+

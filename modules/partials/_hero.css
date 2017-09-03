@@ -1,17 +1,15 @@
 /* Slider */
 
-
-.vert-align {
-	display: table;
-	height: 490px;
-}
-
-.mid {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-
 .slider {
 	background-color: rgb(235, 80, 85);
+
+	.vert-align {
+		display: table;
+		height: 490px;
+
+		.mid {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
 }
